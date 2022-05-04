@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root {
+    --titulos: #212529;
+    --paragraph: #495057;
+
+    --borda: #FFFAF1;
+
+    --fundo-escuro: #00856F;
+    --fundo-claro: #DCE9E2;
+    --fundo-bege: #F7F9F9;
+
+    font-size: 62.5%;
+
+    --nav-height: 7.2rem
+
+}
+
+header::before {
+    content: "";
+    width: 100vw;
+    height: 108rem;
+    background-color: var(--fundo-claro);
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.wrapper{
+    width: 37.5rem;
+    margin-inline: auto;
+}
+
+header {
+    margin-top: calc(4.1rem + var(--nav-height))
+
+
+}
+
+header h4 {
+    font-size: 1.4rem;
+    color: var(--fundo-escuro);
+    margin-bottom: 1.6rem;
+}
+
+header h1 {
+    color: var(--titulos);
+    font-size: 3.4rem;
+    line-height: 130%;
+    margin-bottom: 2.4rem;
+}
+
+header p {
+    color: var(--paragraph);
+
+    line-height: 150%;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    margin-bottom: 3.2rem;
+}
+
+header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    border: none;
+    border-radius: 4rem;
+
+    background-color: var(--fundo-escuro);
+
+    margin-bottom: 6rem;
+    margin-inline: auto;
+
+    height: 6.2rem;
+    width: 26.3rem;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+header img{
+    width: 26.rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 2rem;
+}
+
+.stats{
+    width: 32.7rem;
+    padding-block: 4rem;
+
+    margin-inline: auto;
+
+    background-color: var(--fundo-bege);
+    border: 1px solid var(--borda);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.stat h3{
+    font-size: 4.8rem;
+    color: var(--titulos);
+    line-height: 130%;
+
+    margin-bottom: 0.4rem;
+}
+
+.stat p {
+    margin: 0;
+    color: var(--fundo-escuro);
+    line-height: 150%;
+}
+
+nav {
+    display: flex;
+
+    height: var(--nav-height);
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.scroll {
+    background-color: var(--fundo-escuro);
+    width: 100vw;
+}
+
+nav.scroll svg:nth-child(1) path{
+    fill: white;
+}
+
+nav.scroll svg:nth-child(2) path{
+    stroke: white;
+}
